@@ -115,7 +115,36 @@ namespace NewPractise.Collections
 
         }
     }
+    public class QueueCollections
+    {
+        public void QueueObjectsAdd()
+        {
+            Queue<string > q = new Queue<string>();
+            //adding elements in the Queue by using .Enqueue();
+            q.Enqueue("a");
+            q.Enqueue("b");
+            q.Enqueue("e");
+            q.Enqueue("c");
+            q.Enqueue("d");
+            q.Enqueue("h");
+            q.Enqueue("i");
+            q.Enqueue("f");
+            q.Enqueue("g");
+            foreach (string s in q)
+            {
+                Console.WriteLine(s);
+            }
+            Console.WriteLine(q.Dequeue());
+            Console.WriteLine(q.Dequeue());
+            Console.WriteLine(q.Dequeue());
+            Console.WriteLine(q.Dequeue());
 
+
+
+
+
+        }
+    }
 
 
     public class MainExecution
@@ -131,9 +160,11 @@ namespace NewPractise.Collections
             SortedSetCollections sc = new SortedSetCollections();
             sc.SortedObjectsAdd();
            LinkedListCollections ls = new LinkedListCollections();
-            ls.LinkedListObjectsAdd();*/
+            ls.LinkedListObjectsAdd();
            StackCollections st = new StackCollections();
-            st.StackObjectsAdd();
+            st.StackObjectsAdd();*/
+           QueueCollections qs = new QueueCollections();
+            qs.QueueObjectsAdd();
 
 
 
