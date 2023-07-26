@@ -157,7 +157,22 @@ namespace NewPractise.Collections
             }
         }
     }
-    
+    public class SortedDictionaryCollections
+    {
+        public void SortedDictionaryObjectsAdd()
+        {
+            SortedDictionary<int, string> sd= new SortedDictionary<int,string>();
+            sd.Add(8, "security");
+            sd.Add(2, "system");
+            sd.Add(6, "TYSS");
+            sd.Add(1, "dotnet");
+            sd.Add(5, "dictionary");
+            foreach( KeyValuePair<int,string> sdp in sd)
+            {
+                Console.WriteLine(sdp.Key+" "+sdp.Value);
+            }
+        }
+    }
 
 
     public class MainExecution
@@ -177,10 +192,11 @@ namespace NewPractise.Collections
            StackCollections st = new StackCollections();
             st.StackObjectsAdd();
            QueueCollections qs = new QueueCollections();
-            qs.QueueObjectsAdd();*/
+            qs.QueueObjectsAdd();
            DictionaryCollections dc= new DictionaryCollections();
-            dc.DictionaryObjectsAdd();
-
+            dc.DictionaryObjectsAdd();*/
+          SortedDictionaryCollections sdc  = new SortedDictionaryCollections();
+            sdc.SortedDictionaryObjectsAdd();
 
 
 
