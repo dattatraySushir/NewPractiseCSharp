@@ -87,6 +87,34 @@ namespace NewPractise.Collections
 
         }
     }
+    public class StackCollections
+    {
+        public void StackObjectsAdd()
+        {
+            Stack<string> st = new Stack<string>();
+            //adding elements in the Stack by using .Push();
+            st.Push("a");
+            st.Push("b");
+            st.Push("e");
+            st.Push("f");
+            st.Push("g");
+            st.Push("c"); 
+            st.Push("d");
+            st.Push("h");
+            foreach (string data in st)
+            {
+                Console.WriteLine(data);
+            }
+            Console.WriteLine(st.Peek());
+            Console.WriteLine(st.Pop());
+            Console.WriteLine(st.Peek());
+            Console.WriteLine(st.Peek());
+            Console.WriteLine(st.Peek());
+            Console.WriteLine(st.Pop());
+            Console.WriteLine(st.Pop());
+
+        }
+    }
 
 
 
@@ -101,9 +129,11 @@ namespace NewPractise.Collections
             HashsetCollections hsc = new HashsetCollections();
             hsc.HashObjectsAdd();
             SortedSetCollections sc = new SortedSetCollections();
-            sc.SortedObjectsAdd();*/
+            sc.SortedObjectsAdd();
            LinkedListCollections ls = new LinkedListCollections();
-            ls.LinkedListObjectsAdd();
+            ls.LinkedListObjectsAdd();*/
+           StackCollections st = new StackCollections();
+            st.StackObjectsAdd();
 
 
 
