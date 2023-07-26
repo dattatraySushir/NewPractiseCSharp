@@ -15,6 +15,7 @@ namespace NewPractise.Collections
             li.Add("Sushir");
             li.Add("Maharashtra");
             li.Add("Test Yantra");
+            li.Add(null);
             li.Add("Banglore");
             li.Add("Hyderabad");
             foreach (string st in li)
@@ -24,6 +25,25 @@ namespace NewPractise.Collections
         }
 
     }
+    public class HashsetCollections
+    {
+        public void HashObjectsAdd()
+        {
+            HashSet<string> hs = new HashSet<string>();
+            hs.Add("Microsoft");
+            hs.Add(".NET");
+            hs.Add("C#");
+            hs.Add("Universe");
+            hs.Add("Mobile");
+            foreach(string str in hs)
+            {
+                Console.WriteLine(str);
+            }
+        }
+    } 
+
+
+
     public class MainExecution
     {
 
@@ -32,6 +52,8 @@ namespace NewPractise.Collections
         {
             ListCollections lc = new ListCollections();
             lc.ListObjectsAdd();
+            HashsetCollections hsc = new HashsetCollections();
+            hsc.HashObjectsAdd();
         }
 
 
