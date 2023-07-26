@@ -67,6 +67,26 @@ namespace NewPractise.Collections
 
         }
     }
+    public class LinkedListCollections
+    {
+        public void LinkedListObjectsAdd()
+        {
+            LinkedList<string> ls = new LinkedList<string>();
+            //adding elements in the LinkedList by using .AddFirst(); and .AddLast();
+           ls.AddFirst("a");
+           ls.AddFirst("b");
+           ls.AddFirst("school");
+           ls.AddFirst("d");
+           ls.AddFirst("institution");
+           ls.AddFirst("f");
+            //printing the elements using foreach loop
+            foreach (string data in ls)
+            {
+                Console.WriteLine(data);
+            }
+
+        }
+    }
 
 
 
@@ -79,9 +99,12 @@ namespace NewPractise.Collections
            /* ListCollections lc = new ListCollections();
             lc.ListObjectsAdd();
             HashsetCollections hsc = new HashsetCollections();
-            hsc.HashObjectsAdd();*/
+            hsc.HashObjectsAdd();
             SortedSetCollections sc = new SortedSetCollections();
-            sc.SortedObjectsAdd();
+            sc.SortedObjectsAdd();*/
+           LinkedListCollections ls = new LinkedListCollections();
+            ls.LinkedListObjectsAdd();
+
 
 
 
