@@ -81,7 +81,7 @@ namespace NewPractise.DummyFramework
     }
     public class Sushma
     {
-        public static void Main(String[] args)
+        public static void Main6(String[] args)
         {
             Tejas s = new Yusuf(); 
             s.Abhishek();
