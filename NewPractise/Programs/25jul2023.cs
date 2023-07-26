@@ -9,7 +9,7 @@ namespace NewPractise.Programs
     internal class Class1
 
     {
-        public static void Main(string[] args)
+        public static void main1(string[] args)
         {
             Class1 c1 = new Class1();
             //c1.LargestAndSmallestNO();

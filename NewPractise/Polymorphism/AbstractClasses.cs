@@ -25,9 +25,9 @@ namespace NewPractise.Polymorphism
             Console.WriteLine("The method is provided in the sub class");
         }
         override
-            public sealed void  Display1()
+            public sealed  void  Display1()
         {
-
+            Console.WriteLine("The overriden method from the parent class");
         }
     }
 
