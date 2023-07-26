@@ -138,13 +138,26 @@ namespace NewPractise.Collections
             Console.WriteLine(q.Dequeue());
             Console.WriteLine(q.Dequeue());
             Console.WriteLine(q.Dequeue());
-
-
-
-
-
         }
     }
+    public class DictionaryCollections
+    {
+        public void DictionaryObjectsAdd()
+        {
+            Dictionary<int,string> d = new Dictionary<int,string>();
+            //adding the elements in Dictionary collection with .Add(key, value);
+            d.Add(1, "datta");
+            d.Add(2, "Sushir");
+            d.Add(5, "Tyss");
+            d.Add(9, "banglore");
+            d.Add(7, "hyderabad");
+            foreach(KeyValuePair<int,string> dp in d)
+            {
+                Console.WriteLine(dp.Key+" "+dp.Value);
+            }
+        }
+    }
+    
 
 
     public class MainExecution
@@ -162,9 +175,11 @@ namespace NewPractise.Collections
            LinkedListCollections ls = new LinkedListCollections();
             ls.LinkedListObjectsAdd();
            StackCollections st = new StackCollections();
-            st.StackObjectsAdd();*/
+            st.StackObjectsAdd();
            QueueCollections qs = new QueueCollections();
-            qs.QueueObjectsAdd();
+            qs.QueueObjectsAdd();*/
+           DictionaryCollections dc= new DictionaryCollections();
+            dc.DictionaryObjectsAdd();
 
 
 
