@@ -101,6 +101,7 @@ namespace NewPractise.Collections
             st.Push("c"); 
             st.Push("d");
             st.Push("h");
+            //printing the elements with using foreach loop
             foreach (string data in st)
             {
                 Console.WriteLine(data);
@@ -130,6 +131,7 @@ namespace NewPractise.Collections
             q.Enqueue("i");
             q.Enqueue("f");
             q.Enqueue("g");
+            //printing the elements with using foreach loop
             foreach (string s in q)
             {
                 Console.WriteLine(s);
@@ -151,7 +153,8 @@ namespace NewPractise.Collections
             d.Add(5, "Tyss");
             d.Add(9, "banglore");
             d.Add(7, "hyderabad");
-            foreach(KeyValuePair<int,string> dp in d)
+            //printing the elements with using foreach loop
+            foreach (KeyValuePair<int,string> dp in d)
             {
                 Console.WriteLine(dp.Key+" "+dp.Value);
             }
@@ -168,7 +171,8 @@ namespace NewPractise.Collections
             sd.Add(6, "TYSS");
             sd.Add(1, "dotnet");
             sd.Add(5, "dictionary");
-            foreach( KeyValuePair<int,string> sdp in sd)
+            //printing the elements with using foreach loop
+            foreach ( KeyValuePair<int,string> sdp in sd)
             {
                 Console.WriteLine(sdp.Key+" "+sdp.Value);
             }
@@ -185,6 +189,7 @@ namespace NewPractise.Collections
             sl.Add(9, "TYSS");
             sl.Add(1, "C-Sharp");
             sl.Add(6, "program");
+            //printing the elements with using foreach loop
             foreach(KeyValuePair<int, string> ss in sl)
             {
                 Console.WriteLine(ss.Key+" "+ss.Value);
@@ -192,13 +197,14 @@ namespace NewPractise.Collections
         }
     }
 
+
     public class MainExecution
     {
 
 
         public static void Main(string[] args)
         {
-           /* ListCollections lc = new ListCollections();
+            ListCollections lc = new ListCollections();
             lc.ListObjectsAdd();
             HashsetCollections hsc = new HashsetCollections();
             hsc.HashObjectsAdd();
@@ -213,7 +219,7 @@ namespace NewPractise.Collections
            DictionaryCollections dc= new DictionaryCollections();
             dc.DictionaryObjectsAdd();
           SortedDictionaryCollections sdc  = new SortedDictionaryCollections();
-            sdc.SortedDictionaryObjectsAdd();*/
+            sdc.SortedDictionaryObjectsAdd();
            SortedListCollections scl = new SortedListCollections();
             scl.SortedListObjectsAdd();
 
