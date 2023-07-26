@@ -11,13 +11,15 @@ namespace NewPractise.Collections
         public void ListObjectsAdd()
         {
             List<string> li = new List<string>();
+            //adding elements in the List by using .Add();
             li.Add("Dattatray");
             li.Add("Sushir");
             li.Add("Maharashtra");
             li.Add("Test Yantra");
-            li.Add(null);
+            li.Add(null);//null values are allowed
             li.Add("Banglore");
             li.Add("Hyderabad");
+            //printing the elements using foreach loop
             foreach (string st in li)
             {
                 Console.WriteLine(st);
@@ -27,20 +29,44 @@ namespace NewPractise.Collections
     }
     public class HashsetCollections
     {
+        
         public void HashObjectsAdd()
         {
             HashSet<string> hs = new HashSet<string>();
+            //adding elements in the hashset by using .Add();
             hs.Add("Microsoft");
             hs.Add(".NET");
             hs.Add("C#");
             hs.Add("Universe");
+            hs.Add(".NET");//duplicate are allowed
             hs.Add("Mobile");
+            //printing the elements using foreach loop
             foreach(string str in hs)
             {
                 Console.WriteLine(str);
             }
         }
-    } 
+    }
+    public class SortedSetCollections
+    {
+        public void SortedObjectsAdd()
+        {
+            SortedSet<string> ss = new SortedSet<string>();
+            //adding elements in the Sortedset by using .Add();
+            ss.Add("Bag");
+            ss.Add("b");
+            ss.Add("Table");
+            ss.Add("a");
+            ss.Add("u");
+            ss.Add("g");
+            //printing the elements using foreach loop
+            foreach (string data in ss)
+            {
+                Console.WriteLine(data);
+            }
+
+        }
+    }
 
 
 
@@ -50,10 +76,15 @@ namespace NewPractise.Collections
 
         public static void Main(string[] args)
         {
-            ListCollections lc = new ListCollections();
+           /* ListCollections lc = new ListCollections();
             lc.ListObjectsAdd();
             HashsetCollections hsc = new HashsetCollections();
-            hsc.HashObjectsAdd();
+            hsc.HashObjectsAdd();*/
+            SortedSetCollections sc = new SortedSetCollections();
+            sc.SortedObjectsAdd();
+
+
+
         }
 
 
