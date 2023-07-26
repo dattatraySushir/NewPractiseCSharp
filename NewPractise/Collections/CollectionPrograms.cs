@@ -162,6 +162,7 @@ namespace NewPractise.Collections
         public void SortedDictionaryObjectsAdd()
         {
             SortedDictionary<int, string> sd= new SortedDictionary<int,string>();
+            //adding the elements in SortedDictionary collection with .Add(key, value);
             sd.Add(8, "security");
             sd.Add(2, "system");
             sd.Add(6, "TYSS");
@@ -173,7 +174,23 @@ namespace NewPractise.Collections
             }
         }
     }
-
+    public class SortedListCollections
+    {
+        public void SortedListObjectsAdd()
+        {
+            SortedList<int, string> sl= new SortedList<int,string>();
+            //adding the elements in SortedList collection with .Add(key, value);
+            sl.Add(10, "Extension");
+            sl.Add(3, "hyderabad");
+            sl.Add(9, "TYSS");
+            sl.Add(1, "C-Sharp");
+            sl.Add(6, "program");
+            foreach(KeyValuePair<int, string> ss in sl)
+            {
+                Console.WriteLine(ss.Key+" "+ss.Value);
+            }
+        }
+    }
 
     public class MainExecution
     {
@@ -194,9 +211,11 @@ namespace NewPractise.Collections
            QueueCollections qs = new QueueCollections();
             qs.QueueObjectsAdd();
            DictionaryCollections dc= new DictionaryCollections();
-            dc.DictionaryObjectsAdd();*/
+            dc.DictionaryObjectsAdd();
           SortedDictionaryCollections sdc  = new SortedDictionaryCollections();
-            sdc.SortedDictionaryObjectsAdd();
+            sdc.SortedDictionaryObjectsAdd();*/
+           SortedListCollections scl = new SortedListCollections();
+            scl.SortedListObjectsAdd();
 
 
 
