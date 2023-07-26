@@ -9,10 +9,14 @@ namespace NewPractise
 {
    public class MainMethodProgram
     {
-        public static void Main(string[] args)
+        public static void Main1(string[] args)
         {
-            Hello h = new Hello();
-            h.ExtractMethod();
+            // Hello h = new Hello();
+            // h.ExtractMethod();
+            Inheritted ih = new Inheritted();   
+            
+
+
         }
     }
 }
